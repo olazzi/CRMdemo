@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CRMdb" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ASUS;Initial Catalog=CRMdb;Integrated Security=True" SettingsObjectName="CRMdemo.Properties.Settings" SettingsPropertyName="CRMdbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblProjects" Member="tblProjects">
+    <Type Name="tblProject">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Instagram" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Twitter" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Facebook" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LinkedIn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Youtube" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
